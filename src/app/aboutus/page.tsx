@@ -5,7 +5,7 @@ import Image from "next/image";
 import homeBtn from "../../../resources/icon/home_rounded.png"
 import "../../../resources/Container.css"
 
-export default function aboutus(){
+export default function aboutus() {
     return (
         <div>
             <h1><span>頁面尚未完成</span></h1>

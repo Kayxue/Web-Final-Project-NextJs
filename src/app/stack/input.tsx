@@ -24,7 +24,7 @@ export default function input({ stackSize, setStackSize, setHidden, buildStack }
     }
 
     return (
-        <div className="input" style={{ backgroundColor: "white" }}>
+        <div className="input" style={{ background: "transparent" }}>
             <input type="number" id="stackSize" placeholder="請輸入1~10之間的數字" value={stackSize.toString()} onChange={(e) => onChange(e.target.value)} />
             <button id="submitBtn" onClick={submit}>submit</button>
             <button id="cancelBtn" onClick={cancel}>cancel</button>

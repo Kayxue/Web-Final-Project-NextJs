@@ -8,6 +8,7 @@ import homeBtn from "../../../resources/icon/home_rounded.png"
 import { useState } from "react";
 import Board from "./board"
 import Input from "./input"
+import InputValue from './inputValue';
 import axios, { AxiosError, AxiosResponse } from "axios"
 
 export interface stackItem {
@@ -26,13 +27,20 @@ export default function stack() {
     const [hidden, setHidden] = useState(true);
     const [showTop, setShowTop] = useState(false)
     const [requesting, setRequesting] = useState(false)
+    const [pushValueStr, setPushValueStr] = useState("")
+    const [pushInputHidden, setPushInputHidden] = useState(true)
 
-    function push(num: Number) {
+    function push() {
         if (requesting) return;
         if (!(topIndex < stackSize - 1)) {
             alert("This stack is full!")
             return
         }
+        if (isNaN(Number.parseInt(pushValueStr))) {
+            alert("Please input a number")
+            return
+        }
+        let num = Number.parseInt(pushValueStr)
         const toIns = topIndex + 1
         let tempStack = stack;
         if (topIndex >= 0) {
@@ -45,6 +53,10 @@ export default function stack() {
 
     function pop() {
         if (requesting) return
+        if (!boardExist) {
+            alert("Init a stack first!")
+            return
+        }
         if (topIndex < 0) {
             alert("Stack is empty")
             return
@@ -88,6 +100,8 @@ export default function stack() {
         setTopIndex(-1);
         setStackSize(-1);
         setStackSizeStr("")
+        setPushValueStr("")
+        setPushInputHidden(true)
     }
 
     function assign() {
@@ -99,11 +113,18 @@ export default function stack() {
 
     function swTop() {
         if (requesting) return;
-        setShowTop(showTop ? false : true);
+        if (!boardExist) {
+            alert("Init a stack first!")
+            return
+        }
+        setShowTop(true);
+        setTimeout(() => {
+            setShowTop(false);
+        }, 1500)
     }
 
     function getExample() {
-        if(boardExist){
+        if (boardExist) {
             alert("Please clear the stack first!")
             return
         }
@@ -134,6 +155,15 @@ export default function stack() {
         }
     }
 
+    function openPushInput() {
+        if (requesting) return;
+        if (!boardExist) {
+            alert("Init a stack first!")
+            return
+        }
+        setPushInputHidden(false)
+    }
+
     return (
         <div>
             <h1><span>Stack(堆疊)</span></h1>
@@ -147,7 +177,7 @@ export default function stack() {
             <div className="button_group" style={{ float: "left" }}>
                 <div id="assign" className="button" onClick={() => assign()}>Assign</div><br />
                 <div id="top" className="button" onClick={() => swTop()}>Top</div><br />
-                <div id="push" className="button" onClick={() => push(1)}>Push</div><br />
+                <div id="push" className="button" onClick={() => openPushInput()}>Push</div><br />
             </div>
 
             <div className="board" id="board">
@@ -160,6 +190,7 @@ export default function stack() {
 
             <div id="input">
                 {hidden ? null : <Input stackSize={stackSizeStr} setStackSize={setStackSizeStr} setHidden={setHidden} buildStack={buildStack} />}
+                {pushInputHidden ? null : <InputValue pushValueStr={pushValueStr} setPushValueStr={setPushValueStr} setPushInputHidden={setPushInputHidden} push={push} />}
             </div>
 
             <div className="button_group" style={{ float: "right" }}>
