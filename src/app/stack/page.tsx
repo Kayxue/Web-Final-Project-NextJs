@@ -87,6 +87,7 @@ export default function stack() {
         setBoardExist(false)
         setTopIndex(-1);
         setStackSize(-1);
+        setStackSizeStr("")
     }
 
     function assign() {
@@ -102,6 +103,10 @@ export default function stack() {
     }
 
     function getExample() {
+        if(boardExist){
+            alert("Please clear the stack first!")
+            return
+        }
         setRequesting(true)
         setHidden(true);
         setStackSizeStr("")
@@ -110,12 +115,12 @@ export default function stack() {
 
     async function getStackFromWeb() {
         try {
-            const response: AxiosResponse|Error = await axios.get("http://localhost:90/stack").then(r => r).catch(e => e)
+            const response: AxiosResponse | Error = await axios.get("http://localhost:90/stack").then(r => r).catch(e => e)
 
             if (response instanceof Error) {
                 throw new Error(`Can't get data! Error: ${response}`)
             }
-            alert("Getted the response")
+            alert("Get the response")
             const data = response.data;
             setStackSize(data.stackSize)
             setTopIndex(data.topIndex)

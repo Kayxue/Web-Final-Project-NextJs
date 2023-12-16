@@ -1,8 +1,8 @@
-import type { Metadata } from 'next'
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: '堆疊',
-    description: '堆疊測試器',
+    title: '陣列',
+    description: '陣列測試器',
 }
 
 export default function Template({ children }: { children: React.ReactNode }) {
