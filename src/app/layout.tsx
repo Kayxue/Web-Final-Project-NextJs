@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: '目錄',
+  title: '資料結構小遊戲 | 目錄',
   description: '資料結構小遊戲目錄',
 }
 

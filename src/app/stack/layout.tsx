@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: '堆疊',
-    description: '堆疊測試器',
+    title: '資料結構小遊戲 | 堆疊',
+    description: '堆疊 from 資料結構小遊戲',
 }
 
 export default function RootLayout({
