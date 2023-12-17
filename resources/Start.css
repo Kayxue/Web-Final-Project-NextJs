@@ -1,11 +1,3 @@
-body {
-    background-image: url(bg_dark.png);
-    background-size: 100%;
-    text-align: center;
-    justify-content: center;
-    /* align-items: center; */
-}
-
 h1 {
     font-size: 80px;
     text-align: center;
@@ -93,7 +85,6 @@ h1 span {
     background-color: darkgreen;
     border: 5px inset gray;
 
-    color: black;
     cursor: pointer;
 }
 

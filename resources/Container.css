@@ -1,9 +1,4 @@
 /* 網頁主體程式碼 */
-body {
-    background-image: url(bg_dark.png);
-    background-size: 100%;
-}
-
 h1 {
     font-size: 80px;
     text-align: center;

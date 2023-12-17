@@ -1,21 +1,22 @@
 "use client";
 
 import Image from 'next/image'
-import "../../resources/Start.css"
+// import "../../resources/Start.css"
 import Link from 'next/link'
 import stackImg from "../../resources/icon/stack_picture.png"
 import queueImg from "../../resources/icon/queue_picture.png"
 import arrayImg from "../../resources/icon/array_picture.png"
 import informationImg from "../../resources/icon/information.png"
 import sourceImg from "../../resources/icon/source_picture.png"
+import { Homebody,H1,ButtonGroup } from '../../components/Home/HomeComponent';
 
 export default function Home() {
   return (
-    <body>
+    <Homebody>
       <div>
-        <h1><span>資料結構小遊戲</span></h1>
+        <H1><span>資料結構小遊戲</span></H1>
 
-        <div className='button_group'>
+        <ButtonGroup>
           <Link href="/stack" passHref legacyBehavior prefetch={false}>
             <a>
               <div>
@@ -55,8 +56,8 @@ export default function Home() {
               </div>
             </a>
           </Link>
-        </div>
+        </ButtonGroup>
       </div>
-    </body>
+    </Homebody>
   )
 }
