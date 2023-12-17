@@ -8,7 +8,7 @@ import queueImg from "../../resources/icon/queue_picture.png"
 import arrayImg from "../../resources/icon/array_picture.png"
 import informationImg from "../../resources/icon/information.png"
 import sourceImg from "../../resources/icon/source_picture.png"
-import { Homebody,H1,ButtonGroup } from '../../components/Home/HomeComponent';
+import { Homebody, H1, ButtonGroup } from '../../components/Home/HomeComponent';
 
 export default function Home() {
   return (
