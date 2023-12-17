@@ -12,7 +12,8 @@
     "axios": "^0.26.1",
     "next": "canary",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-component": "^2.8.0"
   },
   "devDependencies": {
     "@types/node": "^20",
