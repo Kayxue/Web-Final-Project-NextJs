@@ -136,7 +136,7 @@ export default function stack() {
 
     async function getStackFromWeb() {
         try {
-            const response: AxiosResponse | Error = await axios.get("https://web-final-project-example-api.vercel.app/api/stack").then(r => r).catch(e => e)
+            const response: AxiosResponse | Error = await axios.get("https://nest-js-vercel-deploy-test.vercel.app/stack").then(r => r).catch(e => e)
 
             if (response instanceof Error) {
                 console.log(response)
