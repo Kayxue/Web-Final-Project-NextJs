@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import homeBtn from "../../../resources/icon/home_rounded.png"
 import { useState } from "react";
+import "../../../resources/Container.css"
 // import { useState } from "react";
 // import Board from "./board"
 // import Input from "./input"
