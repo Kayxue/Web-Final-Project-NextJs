@@ -1,4 +1,9 @@
 /* 網頁主體程式碼 */
+body {
+    background-image: url(bg_dark.png);
+    background-size: 100%;
+}
+
 h1 {
     font-size: 80px;
     text-align: center;
@@ -54,13 +59,18 @@ table {
     bottom: 0;
 }
 
+.queue-table{
+    table-layout: fixed;
+    width:100%;
+}
+
 .inserted {
     animation: hightlight 1s;
     background-color: white;
 }
 
 .getTop{
-    animation: hightlightw 1.2s ease-in-out;  
+    animation: hightlightw 1.2s ease-in-out;
     background-color: white;
 }
 
@@ -188,7 +198,7 @@ button{
 /*顯現出來*/
 @keyframes hightlight {
     50%  {
-        background-color: yellow; 
+        background-color: yellow;
     }
 
     0%,100% {
@@ -196,9 +206,10 @@ button{
     }
 }
 
+/*顯現出來*/
 @keyframes hightlightw {
     50%  {
-        background-color: yellow; 
+        background-color: yellow;
     }
 
     0%,100% {

@@ -7,8 +7,8 @@ import Link from "next/link"
 import homeBtn from "../../../resources/icon/home_rounded.png"
 import { useState } from "react";
 import Board from "./board"
-import Input from "./input"
-import InputValue from './inputValue';
+import Input from "./assignSizeInput"
+import InputValue from './pushValueInput';
 import axios, { AxiosError, AxiosResponse } from "axios"
 
 export interface stackItem {
