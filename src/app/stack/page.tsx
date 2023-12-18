@@ -58,7 +58,7 @@ export default function stack() {
             return
         }
         if (topIndex < 0) {
-            alert("Stack is empty")
+            alert("This stack is empty!")
             return
         }
         let tempStack = stack;
