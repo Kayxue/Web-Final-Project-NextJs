@@ -66,7 +66,7 @@ export default function aboutus() {
 					className="button"
 					onClick={(e) => changeContent(e.currentTarget.id)}
 				>
-					Web 技術
+					Web技術
 				</div>
 				<br />
 				<div
@@ -74,7 +74,7 @@ export default function aboutus() {
 					className="button"
 					onClick={(e) => changeContent(e.currentTarget.id)}
 				>
-					特色
+					特色優點
 				</div>
 			</div>
 		</div>
