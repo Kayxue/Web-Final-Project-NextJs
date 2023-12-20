@@ -1,19 +1,15 @@
-import type { Metadata } from 'next'
-import "./globals.css"
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: '資料結構小遊戲 | 目錄',
-  description: '資料結構小遊戲目錄',
-}
+	title: "資料結構小遊戲 | 目錄",
+	description: "資料結構小遊戲目錄",
+};
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html>
-        {children}
-    </html>
-  )
+	return <html>{children}</html>;
 }
