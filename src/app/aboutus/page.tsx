@@ -39,14 +39,6 @@ export default function aboutus() {
 				</div>
 				<br />
 				<div
-					id="page"
-					className="button"
-					onClick={(e) => changeContent(e.currentTarget.id)}
-				>
-					實際頁面
-				</div>
-				<br />
-				<div
 					id="work"
 					className="button"
 					onClick={(e) => changeContent(e.currentTarget.id)}
