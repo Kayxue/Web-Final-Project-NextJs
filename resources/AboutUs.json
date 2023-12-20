@@ -9,7 +9,7 @@
     },
     "tech": {
         "title": "實際使用之Web技術",
-        "content": "TypeScript JSX & React：將 HTML 與 JS 概念結合，撰寫互動式指令時能直接透過操作變數來修改元素狀態。<br />CSS：網頁的頁面編排與特效實現。<br />CORS:本專案架設的 Example API 利用此技術，讓網頁主體可以發送請求來抓取資料。<br />Next.Js：網頁應用程式框架，讓我們將架設的網頁部署至 Vercel。<br />Nest.js：Server-side Application 框架，可以用於架設 API"
+        "content": "TypeScript JSX & React：將 HTML 與 JS 概念結合，撰寫互動式指令時能直接透過操作變數來修改元素狀態。<br />CSS：網頁的頁面編排與特效實現。<br />CORS：本專案架設的 Example API 利用此技術，讓網頁主體可以發送請求來抓取資料。<br />Next.Js：網頁應用程式框架，讓我們將架設的網頁部署至 Vercel。<br />Nest.js：Server-side Application 框架，可以用於架設 API"
     },
     "feature": {
         "title": "特色與優點",
