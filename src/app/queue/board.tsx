@@ -13,7 +13,7 @@ export default function board({ queue,showFront,showBack }: props) {
         <table className="queue-table">
             <tbody>
                 <tr>
-                    {queue.toReversed().map((e, i) => <td key={i} className={e.hasItem ? "inserted" + ((showFront && e.front)||(showBack&&e.back) ? " getTop" : "") : "removed"}>{e.num?.toString() ?? "　"}</td>)}
+                    {queue.map((e, i) => <td key={i} className={e.hasItem ? "inserted" + ((showFront && e.front)||(showBack&&e.back) ? " getTop" : "") : "removed"}>{e.num?.toString() ?? "　"}</td>)}
                 </tr>
             </tbody>
         </table>
