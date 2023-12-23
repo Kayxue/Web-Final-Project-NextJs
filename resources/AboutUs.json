@@ -15,6 +15,10 @@
         "title": "實際使用之Web技術",
         "content": "TypeScript：將HTML與JS概念結合，撰寫互動式指令時能更為直接的操作。<br />CSS：網頁的頁面編排與特效實現。<br />CORS:本專案利用此技術獲得儲存Example數據的API之資料，於後續處理這些資料並顯示於網頁中。<br />Node.js : 利用Node.js中express來實行後端技術。<br /> "
     },
+    "doc":{
+        "title":"網站說明文件",
+        "content": "<a href='https://www.canva.com/design/DAF3dZY4u1g/k_vsCELXzV4KR1jnZ-O6Lw/view?utm_content=DAF3dZY4u1g&utm_campaign=designshare&utm_medium=link&utm_source=editor'>點我進入</a>"
+    },
     "feature": {
         "title": "特色與優點",
         "content": "使用者能透過網頁中的互動按鈕來創建資料結構模型，按下指令按鈕時，網頁將會執行對應的動作。<br />本網頁加上了一些基礎特效，讓指令的使用上能更具有互動性，並且在不正確時機使用某指令時，也會彈出錯誤訊息來避免較為不明確的操作。<br />本網頁亦提供了範例資料，當使用者按下Example按鈕後，會構建一個現成模型，而使用者同樣能夠操作這個模型。<br />透過這個平台，初學者將能夠將抽象的模型概念具現化，並對於往後學習資料結構時有所幫助。 "
