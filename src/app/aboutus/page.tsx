@@ -46,6 +46,14 @@ export default function aboutus() {
 					組員分工
 				</div>
 				<br />
+				
+				<div
+					id="doc"
+					className="button"
+					onClick={(e) => changeContent(e.currentTarget.id)}
+				>
+					網站說明
+				</div>
 			</div>
 
 			<div className="board" id="board">
@@ -67,23 +75,6 @@ export default function aboutus() {
 					onClick={(e) => changeContent(e.currentTarget.id)}
 				>
 					特色優點
-				</div>
-			</div>
-			<div className="button_group" style={{ float: "right" }}>
-				<div
-					id="doc"
-					className="button"
-					onClick={(e) => changeContent(e.currentTarget.id)}
-				>
-					網站說明文件
-				</div>
-				<br />
-				<div
-					id="doc"
-					className="button"
-					onClick={(e) => changeContent(e.currentTarget.id)}
-				>
-					網站說明
 				</div>
 			</div>
 		</div>
