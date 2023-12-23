@@ -144,7 +144,7 @@ export default function stack() {
 				console.log(response);
 				throw new Error(`Can't get data! Error: ${response}`);
 			}
-			alert("Get the response");
+			alert("以下顯示範例");
 			const data = response.data;
 			setStackSize(data.stackSize);
 			setTopIndex(data.topIndex);
