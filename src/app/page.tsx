@@ -53,9 +53,9 @@ export default function Home() {
 					<br />
 					
 					<Link href="/source" passHref legacyBehavior>
-						<a target="_blank" href="https://www.canva.com/design/DAF3dZY4u1g/k_vsCELXzV4KR1jnZ-O6Lw/view?utm_content=DAF3dZY4u1g&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+						<a target="_blank">
 							<div>
-								<Image src={sourceImg} alt="" /> 簡報
+								<Image src={'https://www.canva.com/design/DAF3dZY4u1g/k_vsCELXzV4KR1jnZ-O6Lw/view?utm_content=DAF3dZY4u1g&utm_campaign=designshare&utm_medium=link&utm_source=editor'} alt="" /> 簡報
 							</div>
 						</a>
 					</Link>
